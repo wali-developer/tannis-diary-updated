@@ -53,7 +53,7 @@ const Sidebar = () => {
     return (
         <div className=' hidden lg:min-w-[200px]  bg-white  pt-[35px]  lg:flex relative'>
             <div className='flex flex-col fixed top-0 bottom-0 left-0   lg:min-w-[200px]'>
-                <div className=' mb-[54px]   mt-[10px]'>
+                <div className=' mb-[54px]   mt-[10px] cursor-pointer' onClick={() => router.push('/dashboard')}>
                     <img
                         src='./logo.png'
                         className='w-[104px] h-[106px] mx-auto'

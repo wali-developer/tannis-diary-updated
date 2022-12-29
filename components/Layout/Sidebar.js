@@ -44,7 +44,7 @@ const Sidebar = () => {
         {
             title: 'Events',
             Icon: <EventsIcon />,
-            path: '/eventsicon'
+            path: '#'
         }
     ];
 

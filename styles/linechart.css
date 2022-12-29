@@ -1,0 +1,15 @@
+.recharts-cartesian-grid-vertical{
+   
+    display: none !important;
+}
+
+.recharts-cartesian-axis-tick-value{
+     font-family: 'Lato' !important;
+     color: #838383 !important;
+     font-size: 10px;
+}
+
+.recharts-cartesian-axis-tick-line{
+    display: none !important;
+}
+

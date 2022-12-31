@@ -16,10 +16,10 @@ const EditProfile = () => {
                                 className="mb-7 flex justify-between items-start"
                             >
                                 <div className='flex gap-x-3'>
-                                    <div className='h-[38px] w-[38px] bg-black flex items-center justify-center rounded-lg'>
+                                    <div className='h-[38px] w-[38px] relative bg-black flex items-center justify-center rounded-lg'>
                                         <img src='/lock.svg' alt='' />
                                     </div>
-                                    <div>
+                                    <div className="flex-1">
                                         <h6 className='text-[15px] font-semibold text-black'>Password changed</h6>
                                         <p className='text-xs text-black/60'>Lorem ipsum dolor sit amet consectetur. Fringilla nulla egestas mauris tortor. Lectus suspendisse at odio feugiat.</p>
                                     </div>

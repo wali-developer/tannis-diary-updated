@@ -11,6 +11,44 @@ import TrainingIcon from '../SVGs/SidebarIcons/TrainingIcon';
 const MobileSidebar = ({ visibility, onCloseButtonClicked }) => {
     const router = useRouter()
 
+    // const sidebardata = [
+    //     {
+    //         title: 'Dashboard',
+    //         Icon: <DashboardIcon />,
+    //         path: '/dashboard'
+    //     },
+    //     {
+    //         title: 'Training',
+    //         Icon: <TrainingIcon />,
+    //         path: '/training'
+    //     },
+    //     {
+    //         title: 'Matches',
+    //         Icon: <Tournaments />,
+    //         path: '/matches'
+    //     },
+    //     {
+    //         title: 'Tournaments',
+    //         Icon: <Tournaments />,
+    //         path: '/tournaments'
+    //     },
+    //     {
+    //         title: 'Players',
+    //         Icon: <PlayersIcon />,
+    //         path: '/players'
+    //     },
+    //     {
+    //         title: 'Coaches',
+    //         Icon: <CouchesIcon />,
+    //         path: '/coaches'
+    //     },
+    //     {
+    //         title: 'Events',
+    //         Icon: <EventsIcon />,
+    //         path: '/events'
+    //     }
+    // ];
+
     const sidebardata = [
         {
             title: 'Dashboard',
@@ -19,12 +57,12 @@ const MobileSidebar = ({ visibility, onCloseButtonClicked }) => {
         },
         {
             title: 'Training',
-            Icon: <TrainingIcon />,
+            Icon: <CouchesIcon />,
             path: '/training'
         },
         {
             title: 'Matches',
-            Icon: <MathcesIcon />,
+            Icon: <Tournaments />,
             path: '/matches'
         },
         {
@@ -45,7 +83,7 @@ const MobileSidebar = ({ visibility, onCloseButtonClicked }) => {
         {
             title: 'Events',
             Icon: <EventsIcon />,
-            path: '#'
+            path: '/events'
         }
     ];
 

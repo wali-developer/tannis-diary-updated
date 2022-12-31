@@ -28,9 +28,8 @@ const Index = () => {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="absolute  -right-28 md:right-0 z-50 pt-4 ">
-                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 
-                                w-[362px] h-[512px] bg-white py-[18px] px-[18px]">
+                            <Popover.Panel className="absolute -right-28 md:right-0 z-50 pt-4 ">
+                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 h-[512px] bg-white py-[18px] px-[18px] notification_container">
                                     <div className='flex flex-row items-center justify-between'>
                                         <h1 className='text-[#1E1E1E] font-bold text-base'>Notification</h1>
                                         <Link href="/notifications">

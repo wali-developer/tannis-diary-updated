@@ -9,6 +9,6 @@
 /* media query for Notification */
 @media (max-width: 390px) {
     .notification_container {
-        width: 260px;
+        width: 280px;
     }
 }

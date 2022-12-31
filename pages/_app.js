@@ -4,15 +4,20 @@ import '../styles/fonts.css'
 import '../styles/callendercutomization.css'
 import '../styles/linechart.css'
 import NextNProgress from "nextjs-progressbar";
+import Head from 'next/head';
 
-function MyApp ({ Component, pageProps })
-{
+function MyApp({ Component, pageProps }) {
   const Layout = Component.getLayout || ((page) => page);
   return (
-    <CustomeLayout>
-      <NextNProgress color="#B3DD07" />
-      { Layout(<Component { ...pageProps } />) }
-    </CustomeLayout>
+    <>
+      <Head>
+        <title>My Tennis Dairy</title>
+      </Head>
+      <CustomeLayout>
+        <NextNProgress color="#B3DD07" />
+        {Layout(<Component {...pageProps} />)}
+      </CustomeLayout>
+    </>
   )
 }
 

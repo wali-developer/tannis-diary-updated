@@ -17,7 +17,7 @@ const EditProfile = () => {
                             >
                                 <div className='flex gap-x-3'>
                                     <div className='h-[38px] w-[38px] relative bg-black flex items-center justify-center rounded-lg'>
-                                        <img src='/lock.svg' alt='' />
+                                        <img src='/Lock.svg' alt='' />
                                     </div>
                                     <div className="flex-1">
                                         <h6 className='text-[15px] font-semibold text-black'>Password changed</h6>

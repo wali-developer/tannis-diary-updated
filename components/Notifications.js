@@ -1,21 +1,17 @@
 import { Popover, Transition } from '@headlessui/react'
+import Link from 'next/link'
 
 import { Fragment } from 'react'
 import HeaderNotificationsIcon from './SVGs/HeaderIcons/HeaderNotificationsIcon'
 
-
-
-
-
-const Index = () =>
-{
+const Index = () => {
     return (
         <div className="max-w-sm px-4 ">
             <Popover className="relative">
-                { ({ open }) => (
+                {({ open }) => (
                     <>
                         <Popover.Button
-                            className={ `
+                            className={`
                 ${open ? '' : 'text-opacity-90'}
                 group inline-flex items-center rounded-md text-base font-medium text-white hover:text-opacity-100 focus:outline-none
                  focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-0`}
@@ -24,7 +20,7 @@ const Index = () =>
 
                         </Popover.Button>
                         <Transition
-                            as={ Fragment }
+                            as={Fragment}
                             enter="transition ease-out duration-200"
                             enterFrom="opacity-0 translate-y-1"
                             enterTo="opacity-100 translate-y-0"
@@ -37,14 +33,15 @@ const Index = () =>
                                 w-[362px] h-[512px] bg-white py-[18px] px-[18px]">
                                     <div className='flex flex-row items-center justify-between'>
                                         <h1 className='text-[#1E1E1E] font-bold text-base'>Notification</h1>
-                                        <h1 className='text-[#1E1E1E] font-bold text-sm cursor-pointer'>View all</h1>
+                                        <Link href="/notifications">
+                                            <h1 className='text-[#1E1E1E] font-bold text-sm cursor-pointer'>View all</h1>
+                                        </Link>
                                     </div>
                                     <div className='flex flex-col mt-[26px] justify-between'>
-                                        { [1, 2, 3, 4, 5, 6, 7].map((__, index) =>
-                                        {
+                                        {[1, 2, 3, 4, 5, 6, 7].map((__, index) => {
                                             return (
                                                 <div
-                                                    key={ index + '' }
+                                                    key={index + ''}
                                                     className="mb-6 flex justify-between items-start"
                                                 >
                                                     <div className='flex gap-x-3'>
@@ -59,13 +56,13 @@ const Index = () =>
                                                     <p className='text-xs text-black/60'>12 min</p>
                                                 </div>
                                             )
-                                        }) }
+                                        })}
                                     </div>
                                 </div>
                             </Popover.Panel>
                         </Transition>
                     </>
-                ) }
+                )}
             </Popover>
         </div>
     )

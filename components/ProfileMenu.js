@@ -2,7 +2,8 @@ import { Menu } from "@headlessui/react";
 import Link from "next/link";
 import React from "react";
 
-const ProfileMenu = () => {
+const ProfileMenu = () =>
+{
     return (
         <Menu>
             <Menu.Button className="flex gap-x-[5px] items-center">
@@ -18,7 +19,7 @@ const ProfileMenu = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        strokeWidth={1.5}
+                        strokeWidth={ 1.5 }
                         stroke="currentColor"
                         className="w-4 h-5"
                     >
@@ -49,7 +50,7 @@ const ProfileMenu = () => {
                         </Link>
                     </Menu.Item>
                     <Menu.Item>
-                        <Link href="#">
+                        <Link href="/">
                             <div className='flex gap-x-2 items-center cursor-pointer'>
                                 <img src='/logout.svg' alt='' />
                                 <span className='text-sm'>Logout</span>

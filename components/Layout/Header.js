@@ -6,13 +6,14 @@ import ProfileMenu from '../ProfileMenu';
 import HeaderNotificationsIcon from '../SVGs/HeaderIcons/HeaderNotificationsIcon';
 import HeaderSearchIcon from '../SVGs/HeaderIcons/HeaderSearchIcon';
 
-const Header = ({ onMenuButtonClicked }) => {
+const Header = ({ onMenuButtonClicked }) =>
+{
     return (
         <div className='h-[80px] bg-white flex items-center justify-between pl-[32px] pr-[42px]'>
             <div>
                 <h1 className='text-black text-lg hidden lg:inline'>Welcome To My Tennis Dairy Dashboard</h1>
                 <div className='bolck lg:hidden cursor-pointer'
-                    onClick={() => onMenuButtonClicked()}
+                    onClick={ () => onMenuButtonClicked() }
                 >
                     <MenuIcon />
                 </div>
@@ -39,12 +40,13 @@ const Header = ({ onMenuButtonClicked }) => {
     );
 }
 
-const MenuIcon = () => {
+const MenuIcon = () =>
+{
     return (<svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
-        strokeWidth={1.5}
+        strokeWidth={ 1.5 }
         stroke="currentColor"
         className="w-8 h-8"
     >

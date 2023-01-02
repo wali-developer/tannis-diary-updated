@@ -11,9 +11,7 @@ const Index = () =>
 {
     const tabs = [
         'Upcooming',
-        'Approve',
-        'Pending',
-        'Canceled',
+        'Completed',
         'Total'
     ]
 
@@ -25,7 +23,7 @@ const Index = () =>
         <>
             <div className='  bg-[#FAFAFC] flex-1 flex flex-col self-stretch px-[20px] py-[20px] lg:py-[20px] xl:py-[36px] slg:pl-[20px] lg:pr-[30px]'>
                 {/* Tabs start */ }
-                <div className=' block md:mx-auto lg:mx-0 max-w-[632px] '>
+                <div className=' block md:mx-auto lg:mx-0 max-w-[355px] '>
                     <div className='flex flex-col sm:flex-row p-1 bg-white rounded-[10px] '>
                         { tabs.map((item, index) =>
                         {

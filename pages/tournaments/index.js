@@ -10,9 +10,7 @@ const Index = () =>
 {
     const tabs = [
         'Upcooming',
-        'Approve',
-        'Pending',
-        'Canceled',
+        'Completed',
         'Total'
     ]
 

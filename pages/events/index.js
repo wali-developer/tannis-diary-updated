@@ -7,7 +7,8 @@ import ModalCallender from '../../components/SVGs/ModalCallender';
 import ModalClockIcon from '../../components/SVGs/ModalClockIcon';
 import ModalsCloseIcon from '../../components/SVGs/ModalsCloseIcon';
 
-const Index = () => {
+const Index = () =>
+{
     const tabs = [
         'Upcooming',
         'Completed',
@@ -20,42 +21,43 @@ const Index = () => {
     return (
         <>
             <div className='  bg-[#FAFAFC] flex-1 self-stretch px-[20px] py-[20px] lg:py-[20px] xl:py-[36px] lg:pl-[20px] lg:pr-[30px]'>
-                {/* Tabs start */}
-                <div className=' block md:mx-auto lg:mx-0 max-w-[632px] '>
+                {/* Tabs start */ }
+                <div className=' block md:mx-auto lg:mx-0 max-w-[355px] '>
                     <div className='flex flex-col sm:flex-row p-1 bg-white rounded-[10px] '>
-                        {tabs.map((item, index) => {
+                        { tabs.map((item, index) =>
+                        {
                             return (
                                 <div
-                                    key={index + ''}
+                                    key={ index + '' }
                                     className='rounded-[10px] cursor-pointer flex items-center justify-center'
-                                    style={{
+                                    style={ {
                                         backgroundColor: selectedTab == index ? '#B3DD07' : 'white',
                                         boxShadow: selectedTab == index ? '0px 5px 20px rgba(0, 0, 0, 0.05)' : null
-                                    }}
-                                    onClick={() => setSelectedtab(index)}
+                                    } }
+                                    onClick={ () => setSelectedtab(index) }
                                 >
                                     <h1
                                         className='font-semibold text-sm w-[116px] text-center py-[11px] transition-all duration-500 ease-in'
-                                        style={{
+                                        style={ {
                                             color: selectedTab == index ? 'white' : '#52575C'
-                                        }}
-                                    >{item}</h1>
+                                        } }
+                                    >{ item }</h1>
                                 </div>
                             )
-                        })}
+                        }) }
                     </div>
                 </div>
-                {/* Tabs end */}
+                {/* Tabs end */ }
 
-                {/* Table start */}
+                {/* Table start */ }
                 <div className='bg-white mt-[31px] rounded-[8px]  relative py-[24px] overflow-x-hidden shadow-sm flex flex-col '>
-                    {/* Heading start */}
+                    {/* Heading start */ }
                     <div className=' flex flex-col space-y-[20px] sm:space-y-0 sm:flex-row sm:items-center justify-between pl-[30px] pr-[21px] '>
-                        {/* Left */}
+                        {/* Left */ }
                         <div>
                             <h1 className='text-black font-semibold text-xl'>All events</h1>
                         </div>
-                        {/* Right */}
+                        {/* Right */ }
                         <div className='flex sm:flex-row flex-col sm:space-x-3 space-y-3 sm:space-y-0  lg:space-x-[30px] xl:space-x-[50px] '>
                             <div className='flex flex-row items-center justify-end space-x-3   lg:space-x-[30px] xl:space-x-[50px]'>
                                 <div className=' h-[42px] rounded-[6px] border border-rgba(0, 0, 0, 0.2) cursor-pointer 
@@ -90,14 +92,14 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Heading end */}
+                    {/* Heading end */ }
                     <div className='relative self-stretch '>
                         <div className=' max-w-[90vw] sm:container sm:mx-auto  lg:w-full mt-[20px] overflow-x-auto lg:overflow-hidden relative  '>
                             <table className='w-full '>
                                 <thead>
                                     <tr className='bg-[#F8F9FA]   text-left'>
                                         <th className='pl-[20px]  py-[12px] font-medium lg:font-semibold  text-base  whitespace-nowrap  '>#</th>
-                                        <th className='  py-[12px]  font-medium lg:font-semibold text-base whitespace-nowrap lg:min-w-[100px] tracking-wide'>Image</th>
+                                        <th className='  py-[12px]  font-medium lg:font-semibold text-base whitespace-nowrap min-w-[100px] tracking-wide'>Image</th>
                                         <th className=' py-[12px]  font-medium  lg:font-semibold  text-base whitespace-nowrap lg:min-w-[100px] tracking-wide'>Club name</th>
                                         <th className=' py-[12px]  font-medium  lg:font-semibold  text-base whitespace-nowrap lg:min-w-[100px] tracking-wide pl-2'>Date</th>
                                         <th className=' py-[12px]  font-medium  lg:font-semibold  text-base  whitespace-nowrap lg:min-w-[200px] tracking-wide'>Format</th>
@@ -108,12 +110,13 @@ const Index = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {new Array(10).fill(null).map((__, index) => {
+                                    { new Array(10).fill(null).map((__, index) =>
+                                    {
                                         return (
-                                            <tr key={index + ''}
+                                            <tr key={ index + '' }
                                                 className='bg-white   border-b border-[#E8E8E8] text-sm text-[#52575C]'>
                                                 <td className='px-[10px] lg:px-0   py-[17px] '>
-                                                    <h1 className='pl-[20px] min-w-[50px] '>{index + 1}</h1>
+                                                    <h1 className='pl-[20px] min-w-[50px] '>{ index + 1 }</h1>
                                                 </td>
                                                 <td className='px-[10px] lg:px-0 py-[17px] '>
                                                     <img src='/event.svg' alt='' className='w-[40px] h-[40px] rounded-full object-cover' />
@@ -137,31 +140,31 @@ const Index = () => {
                                                     <h1 className='min-w-[120px]'>60 players</h1>
                                                 </td>
                                                 <td className='cursor-pointer'
-                                                    onClick={() => setModalVisibility(true)}
+                                                    onClick={ () => setModalVisibility(true) }
                                                 >
                                                     <GreenEye />
                                                 </td>
                                             </tr>
                                         )
-                                    })}
+                                    }) }
                                 </tbody>
                             </table>
                         </div>
                     </div>
                     <PaginationElement />
                 </div>
-                {/* Table end */}
+                {/* Table end */ }
             </div>
             <Modal
-                show={modalVisibility}
-                hide={() => setModalVisibility(false)}
+                show={ modalVisibility }
+                hide={ () => setModalVisibility(false) }
             >
                 <div className=' relative pb-[30px] bg-white rounded-2xl overflow-hidden'>
                     <div className='w-full px-[17px] bg-[#F8F9FA] flex flex-row justify-between items-center py-[11px]'>
                         <h1 className='text-base text-[#000000] font-semibold'>Training details</h1>
                         <div
                             className='cursor-pointer'
-                            onClick={() => setModalVisibility(false)}
+                            onClick={ () => setModalVisibility(false) }
                         >
                             <ModalsCloseIcon />
                         </div>

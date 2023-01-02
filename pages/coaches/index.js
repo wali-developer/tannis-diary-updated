@@ -59,18 +59,18 @@ const CoachItem = () =>
             />
             <h1 className='mt-[11px] text-black font-semibold tracking-[0.1px] leading-5'>Celia Jordan</h1>
             <h1 className='text-black text-xs leading-[18px] mt-[1px]'>Seville, Spain</h1>
-            <div className='mt-[15px] flex flex-row space-x-[12px] justify-center'>
-                <div>
-                    <h1 className=' text-[#807C7C] text-xs leading-5  text-start'>Email:</h1>
-                    <h1 className=' text-[#807C7C] text-xs leading-5 my-[11px] text-start '>No of players:</h1>
-                    <h1 className=' text-[#807C7C] text-xs leading-5   text-start'>Phone number:</h1>
-
+            <div className='mt-[15px] '>
+                <div className='flex flex-row  justify-between gap-x-2 lg:gap-0'>
+                    <h1 className=' text-[#807C7C] text-xs leading-5  min-w-[81px] '>Email:</h1>
+                    <h1 className='text-[#1E1E1E] text-sm text-start  flex-1'>abc123@gmail.com</h1>
                 </div>
-                <div className='flex flex-col self-stretch justify-between items-start'>
-                    <h1 className='text-[#1E1E1E] text-sm'>abc123@gmail.com</h1>
-                    <h1 className='text-[#1E1E1E] text-sm '>50 Players</h1>
-                    <h1 className='text-[#1E1E1E] text-sm'>+34 776 361 436</h1>
-
+                <div className='flex flex-row  justify-between my-[11px] gap-x-2 lg:gap-0'>
+                    <h1 className=' text-[#807C7C] text-xs leading-5  min-w-[81px] '>No of players:</h1>
+                    <h1 className='text-[#1E1E1E] text-sm  flex-1'>50 Players</h1>
+                </div>
+                <div className='flex flex-row  justify-between gap-x-2 lg:gap-0'>
+                    <h1 className=' text-[#807C7C] text-xs leading-5  min-w-[81px] '>Phone number:</h1>
+                    <h1 className='text-[#1E1E1E] text-sm  flex-1 '>+34 776 361 436</h1>
                 </div>
             </div>
         </div>

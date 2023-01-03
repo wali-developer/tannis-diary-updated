@@ -36,25 +36,25 @@ const TotalMembers = () =>
 
                     >
                         { data.map((entry, index) => (
-                            <Cell key={ `cell-${index}` } fill={ COLORS[index % COLORS.length] } />
+                            <Cell key={ `cell-${index}` }
+                                fill={ COLORS[index % COLORS.length] } />
                         )) }
                     </Pie>
                 </PieChart>
             </ResponsiveContainer>
-            <div className='flex gap-6 flex-wrap -mt-14'>
+            <div className='flex gap-3 flex-wrap -mt-20'>
                 { data?.map((item, index) =>
                 {
                     return (
                         <div
-                            className='flex flex-row  items-center space-x-2'
+                            className='flex flex-row  items-center space-x-[6px]'
                             key={ index + '' }>
                             <div className={ `w-[18px] h-[12px]  rounded-sm ` }
                                 style={ {
                                     backgroundColor: item?.color
                                 } }>
                             </div>
-                            <h1>20%</h1>
-                            <h1>{ item?.name }</h1>
+                            <h1 className='text-gray-700 mb-[0.4px] font-medium text-sm'><span className='font-semibold'>{ '20% ' }</span> { item?.name }</h1>
                         </div>
                     )
                 }) }

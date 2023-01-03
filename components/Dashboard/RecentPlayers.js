@@ -4,7 +4,7 @@ import ChevronLeftIcon from '../SVGs/DashboardIcons/ChevronLeftIcon';
 const RecentPlayers = () =>
 {
     return (
-        <div className=' bg-white lg:max-h-[370px] rounded-[10px]  sm:flex-1 lg:flex-none lg:w-full  lg:min-w-[350px] overflow-hidden 
+        <div className=' bg-white lg:min-h-[375px] rounded-[10px]  sm:flex-1 lg:flex-none lg:w-full  lg:min-w-[350px] overflow-hidden 
                           relative flex flex-col py-[14px] px-[20px]  '>
             <h1 className='text-[#18181B] font-semibold text-lg'>Recent Players</h1>
             <div className='flex items-center justify-between my-[4px]'>

@@ -61,13 +61,13 @@ export default function Home ()
 
                         {/* Bar graph */ }
                         <BarGraphChart />
-                        <div className='flex flex-col sm:flex-row mt-[33px] sm:space-x-[33px] space-y-[26px] sm:space-y-0'>
+                        <div className='flex flex-col sm:flex-row mt-[33px] sm:gap-[33px] space-y-[26px] sm:space-y-0 flex-wrap'>
                             <AppDownload />
                             <TotalMembers />
                         </div>
                     </div>
                     <div className='self-stretch lg:flex-[32] relative mt-[30px] flex flex-col sm:flex-row space-x-0 lg:space-x-0 
-                    sm:space-x-[33px] lg:flex-col  space-y-[30px] sm:space-y-0   lg:justify-between '>
+                    sm:space-x-[33px] lg:flex-col  space-y-[30px] sm:space-y-0 lg:space-y-[30px] '>
                         <RecentPlayers />
                         <TrafficSource />
                     </div>

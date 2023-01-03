@@ -52,7 +52,7 @@ const AppDownload = () =>
     }, []);
 
     return (
-        <div className='sm:flex-1 h-[318px] bg-white rounded-[10px] py-[11px] pl-[17px] pr-[15px] relative'>
+        <div className='sm:flex-1 h-[318px] bg-white rounded-[10px] py-[11px] pl-[17px] pr-[15px] relative min-w-[300px] '>
             {/* Heading start */ }
             <div className='flex flex-row items-center justify-between'>
                 <h1 className='text-black text-base font-semibold'>App downloads</h1>

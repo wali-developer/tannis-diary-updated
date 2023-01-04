@@ -180,7 +180,11 @@ const Index = () =>
                 show={ modalVisibility }
                 hide={ () => setModalVisibility(false) }
             >
-                <div className=' relative pb-[30px] bg-white rounded-2xl overflow-hidden'>
+                <div className=' relative pb-[30px] bg-white rounded-2xl overflow-hidden'
+                    style={ {
+                        'zIndex': '999999'
+                    } }
+                >
                     <div className='w-full px-[17px] bg-[#F8F9FA] flex flex-row justify-between items-center py-[11px]'>
                         <h1 className='text-base text-[#000000] font-semibold'>Training details</h1>
                         <div

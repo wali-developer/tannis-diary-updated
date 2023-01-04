@@ -20,7 +20,7 @@ const Header = ({ onMenuButtonClicked }) =>
             </div>
             <div className='flex space-x-[25px] items-center '>
                 <div className='hidden sm:block sm:w-[312px] border border-[#D0CECE] h-[40px] rounded-md overflow-hidden relative'>
-                    <div className='h-full flex items-center justify-center absolute z-50 left-[17px] '>
+                    <div className='h-full flex items-center justify-center absolute  left-[17px]  '>
                         <HeaderSearchIcon />
                     </div>
                     <input
